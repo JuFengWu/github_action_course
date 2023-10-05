@@ -4,7 +4,7 @@ def add_func(a,b):
     return a+b
     
 def minuse_func(a,b):
-    return a-b # error here
+    return a+b # error here
     
 if __name__ == "__main__":
 

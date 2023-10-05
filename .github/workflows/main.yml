@@ -17,4 +17,5 @@ jobs:
         pip3 install --upgrade pip
     - name: Run my python
       run: |
-        python3 my_python.py
+        #python3 my_python.py
+        python3 test_python.py

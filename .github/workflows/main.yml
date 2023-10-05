@@ -18,4 +18,5 @@ jobs:
     - name: Run my python
       run: |
         #python3 my_python.py
-        python3 test_python.py
+        #python3 test_python.py
+        python3 unit_test.py

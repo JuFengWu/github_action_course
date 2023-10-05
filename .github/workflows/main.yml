@@ -1,0 +1,20 @@
+name: Run my python
+
+on: 
+  push: # do this every push
+  #schedule:
+  #- cron: "0 0 * * *"
+  # every end of day 
+  # https://jasonet.co/posts/scheduled-actions/
+jobs:
+  build:
+    name: Set up environment
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2 # what kind of github action version to use
+    - name: Install dependencies
+      run: |
+        pip3 install --upgrade pip
+    - name: Run my python
+      run: |
+        python3 my_python.py

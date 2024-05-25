@@ -6,6 +6,11 @@ on:
   #- cron: "0 0 * * *"
   # every end of day 
   # https://jasonet.co/posts/scheduled-actions/
+  # https://crontab.guru
+  # - cron: */5 * * * *
+  # every 5 minute
+  # - core: * */5 * * *
+  # every 1 hour
 jobs:
   build:
     name: Set up environment

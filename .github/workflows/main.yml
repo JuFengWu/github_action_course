@@ -9,7 +9,7 @@ on:
   # https://crontab.guru
   # - cron: */5 * * * *
   # every 5 minute
-  # - core: * */5 * * *
+  # - core: 0 * * * *
   # every 1 hour
 jobs:
   build:

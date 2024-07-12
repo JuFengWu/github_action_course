@@ -25,3 +25,14 @@ jobs:
         #python3 my_python.py
         #python3 test_python.py
         python3 unit_test.py
+  build3:
+    name: Set up environment 2
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2 # what kind of github action version to use
+    - name: Install dependencies
+      run: |
+        pip3 install --upgrade pip
+    - name: Run my python 2
+      run: |
+        python3 unit_test.py
